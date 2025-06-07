@@ -34,6 +34,7 @@ Before you can run the code, you will need to install a few dependencies. I hope
  - os
  - threading
  - ollama
+ - webcolors
  - wiz (Just clone the [repository](https://github.com/cueo/wiz) into the home directory)
  - tkinter
  - PyDictionary
