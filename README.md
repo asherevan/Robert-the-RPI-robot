@@ -42,4 +42,4 @@ Before you can run the code, you will need to install a few dependencies. I hope
 
 #### Other packages or tools
  - bluez-tools
- - ollama (Optional but necessary if you want AI responses)
+ - ollama (Optional for core system but necessary if you want AI responses)
