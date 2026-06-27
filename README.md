@@ -21,7 +21,7 @@ Before you can run the code, you will need to install a few dependencies. I hope
  - requests
  - json
  - rhvoice_wrapper
- - SpeechRecognition (Version 3.8.1)
+ - SpeechRecognition (Must be version 3.8.1)
  - pvporcupine
  - wikipedia
  - datetime
@@ -40,6 +40,9 @@ Before you can run the code, you will need to install a few dependencies. I hope
  - PyDictionary
  - RPI_GPIO
 
-#### Other packages or tools
+#### Other packages or tools:
  - bluez-tools
  - ollama (Optional for core system but necessary if you want AI responses)
+
+#### Other requirements:
+Before the system will function correctly, you also need to get a picovoice API key and place it in robertProgram.py (the variable `apikey`) as well as generating a wake word file for your chosen wake text (if you name the file anything other than heyRobert.ppn, you'll need to change the file path in the code). Also, if you would like to control any Wiz smart bulbs, replace the IP address(s) in the variable `lights`, otherwise, you should remove all instances of `wiz.Light` from that list or it will fail to run. The bluetooth `deviceAddr` will also need to be replaced.

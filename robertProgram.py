@@ -15,7 +15,7 @@ def get_joke():
                 else:
                         print('I couldn\'t find any jokes right now.')
                         return None
-        except request.exceptions.RequestException as e:
+        except requests.exceptions.RequestException as e:
                 print('Couldn\'t retrieve joke')
                 return None
 
@@ -148,7 +148,7 @@ def askollama(message):
 # Smart lights. You can add more smart lights to this list. (They just have to have a on and an off function)
 sys.path.append('/home/pi/wiz')
 import wiz
-lights = [wiz.Light(ip='10.0.0.231')]
+lights = [wiz.Light(ip='BULBIPADDRESS')]
 
 def lightsoff():
 	for i in lights:
